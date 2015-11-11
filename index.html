@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Simple Calculator</title>
+
+	<meta name="description" content="An Simple Calculator">
+	<meta name="author" content="sabahang">
+
+	<link href="styles/calculator.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+					<div class="navbar-header">
+
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+							</button> <a class="navbar-brand" href="#">HTML Calculator</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+				            <li><a href="http://sabahang.github.io/">About Author</a></li>
+				            <li><a href="#about" role="button" data-toggle="modal">About Simple Calculator</a></li>
+						</ul>
+					</div>
+
+				</nav>
+			</div>
+		</div>
+		<div class="row">
+			<div class="calc_box">
+				<section class="calculator col-lg-4 col-lg-offset-4">
+					<table class="table">
+						<thead>
+							<tr>
+								<td colspan="4">
+									<p id="display" class="text-right">0</p>
+								</td>
+							</tr>
+
+						</thead>
+						<tbody class="keys">
+							<tr>
+								<td><button class="operandbtn btn btn-lg btn-info btn-block">1</button></td>
+								<td><button class="operandbtn btn btn-lg btn-info btn-block">2</button></td>
+								<td><button class="operandbtn btn btn-lg btn-info btn-block">3</button></td>
+								<td><button data-sign="+" class="operatorbtn btn btn-lg btn-success btn-block">&#43;</button></td>
+							</tr>
+							<tr>
+								<td><button class="operandbtn btn btn-lg btn-info btn-block">4</button></td>
+								<td><button class="operandbtn btn btn-lg btn-info btn-block">5</button></td>
+								<td><button class="operandbtn btn btn-lg btn-info btn-block">6</button></td>
+								<td><button data-sign="-" class="operatorbtn btn btn-lg btn-success btn-block">&minus;</button></td>
+							</tr>
+							<tr>
+								<td><button class="operandbtn btn btn-lg btn-info btn-block">7</button></td>
+								<td><button class="operandbtn btn btn-lg btn-info btn-block">8</button></td>
+								<td><button class="operandbtn btn btn-lg btn-info btn-block">9</button></td>
+								<td><button data-sign="*" class="operatorbtn btn btn-lg btn-success btn-block">&times;</button></td>
+							</tr>
+							<tr>
+								<td><button class="equalbtn btn btn-lg btn-info btn-block">&#61;</button></td>
+								<td><button class="operandbtn btn btn-lg btn-info btn-block">0</button></td>
+								<td><button class="clearbtn btn btn-lg btn-danger btn-block">C</button></td>
+								<td><button data-sign="/" class="operatorbtn btn btn-lg btn-success btn-block">&divide;</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</div>
+			
+		</div>
+	</div>
+	<div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="color:black">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">About Simple Calculator</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<p>This app was made as a part of Free Code Camp full-stack developer curriculum. This is a completely free self-paced course aimed at any audience from novice to experienced. Please consider contributing and checking it out at <a href="http://www.freecodecamp.com">www.freecodecamp.com</a>. <br>
+	        You can check my profile at <a href="http://www.freecodecamp.com/sabahang">freecodecamp.com/sabahang</a>
+	        </p>
+	        <p>
+	        Learning points for this project:
+		        <ul>
+		        	<li>Grunt and Bower (Plugins used: watch, live-reload, uglify, cssmin, concat, less, jshint and connect</li>
+		        	<li>CSS3 Transformations</li>
+		        	<li>Css box-shadow</li>
+		        	<li>HTML entities</li>
+		        	<li>Modifying Bootstrap using less file and compiling it</li>
+		        </ul>
+
+		        Technologies used: HTML5, Bootstrap, CSS3, Jquery, Javascript
+
+	        </p>
+
+	        <br>
+	        <br>
+	        Last update: 11 November 2015
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script src="scripts/calculator.min.js"></script>
+</body>
+</html>
